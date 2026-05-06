@@ -157,6 +157,7 @@ These are placeholders in the current copy that you'll want to correct:
 5. **Posthog** - wire up and add cookies banner
 6. **Navbar** - needs to be refactored so the section tracking is smoother
 7. **Copy** - needs proper review 
+8. **One-pager** - change to get early access 
 
 
 ---
