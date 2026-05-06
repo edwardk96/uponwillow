@@ -3,7 +3,7 @@ import { ButtonLink } from "@/components/ui/button";
 
 export function FinalCTA() {
   return (
-    <section className="text-center mx-6 mt-12 py-14 bg-card border-divider border-1 border-border rounded-2xl">
+    <section className="text-center mx-6 my-12 px-6 py-14 bg-card border-divider border-1 border-border rounded-2xl">
       <h2 className="font-serif text-3xl font-medium mb-3">
         Want to learn more?
       </h2>
