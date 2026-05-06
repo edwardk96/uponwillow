@@ -6,7 +6,7 @@ export const teamContent = {
   members: [
     {
       initials: "LG",
-      name: "Liam Grey",
+      name: "Liam Gray",
       role: "Co-founder",
       accent: "vault" as const,
       bio:
