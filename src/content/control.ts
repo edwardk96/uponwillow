@@ -1,23 +1,23 @@
 export const controlContent = {
   eyebrow: "You stay in control",
-  headline: "Your client. Your brand. Your call.",
+  headline: "Your client. Your brand. Your support.",
   subhead:
     "We don't market to your clients, and we don't approach the family without you. Every touchpoint runs through your firm.",
   items: [
     {
       title: "You initiate everything",
       body:
-        "Vault invites are sent under your firm's name. Willow only activates when you confirm the death.",
+        "Willow only activates when you confirm the death, any invites are sent under your firm's name.",
     },
     {
       title: "White-label option",
       body:
-        "Co-branded or fully white-labelled. Your logo, your tone of voice, your introduction to the family.",
+        "Co-branded or fully white-labelled. Your logo, your tone of voice, your support for the family.",
     },
     {
       title: "No direct cross-sell",
       body:
-        "We never market other financial services to your clients or their beneficiaries. Ever.",
+        "We will never market other financial services or third parties to your clients or their beneficiaries.",
     },
   ],
 } as const;
