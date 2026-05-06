@@ -1,8 +1,8 @@
 export const teamContent = {
   eyebrow: "Meet the founders",
-  headline: "Built by people who know the sector and the systems.",
+  headline: "Built by people who know the sector.",
   subhead:
-    "Two complementary backgrounds: deep experience in the UK death-care industry and institutional finance, paired with the technical depth to build a security-grade product.",
+    "Institutional finance and UK death-care industry experience, combined with the knowhow of building several production-grade platforms.",
   members: [
     {
       initials: "LG",
@@ -10,7 +10,7 @@ export const teamContent = {
       role: "Co-founder",
       accent: "vault" as const,
       bio:
-        "Quantitative researcher at a leading systematic hedge fund before founding Upon. Computer science at Cambridge. Designed Upon's end-to-end encryption architecture and beneficiary key-sharing scheme.",
+        "Quantitative researcher at a leading systematic hedge fund before founding Upon. Designed Upon's end-to-end encryption architecture and Shamir secret key-sharing. Computer Science at Cambridge.",
       credentials: [
         "Quant developer, Quadrature Hedge Fund",
         "Computer Science, University of Cambridge",
