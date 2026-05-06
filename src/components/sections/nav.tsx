@@ -77,29 +77,29 @@ export function Nav() {
       <nav className="grid grid-cols-[auto_1fr_auto] items-center gap-4 px-6 h-14 max-w-4xl mx-auto">
         {/* Logos — left */}
         <div className="flex items-center gap-1">
-          <a
+          {/* <a
             href={siteMeta.uponUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Upon — opens in a new tab"
-          >
+          > */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/upon-logo.png" alt="Upon" className="h-6 w-auto" />
-          </a>
+            <img src="/upon-logo.svg" alt="Upon" className="h-6 w-auto" />
+          {/* </a> */}
           <span className="text-muted text-sm" aria-hidden="true">
             ×
           </span>
-          <a
+          {/* <a
             href={siteMeta.willowUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center hover:opacity-80 transition-opacity"
             aria-label="Willow — opens in a new tab"
-          >
+          > */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/willow-logo.svg" alt="Willow" className="h-4 w-auto" />
-          </a>
+          {/* </a> */}
         </div>
 
         {/* Nav links — centre, desktop only */}
