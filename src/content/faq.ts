@@ -5,22 +5,22 @@ export const faqContent = {
     {
       question: "Why are these two separate companies?",
       answer:
-        "Different products, different buyers, built to work together. Keeping them separate keeps each one focused — and means you can adopt one without the other if it suits your firm.",
-    },
-    {
-      question: "What's the regulatory position?",
-      answer:
-        "Neither product is a regulated financial service. Vault is a software tool; Willow is administrative support. We can share our DPA, security whitepaper and a note on FCA-adjacent considerations on request.",
+        "Different products, different buyers, that excel together. Keeping them separate allows us to offer focused and modular products.",
     },
     {
       question: "Can I use just one?",
       answer:
-        "Yes. They're sold separately and work independently. The combined offer is simply where the value compounds.",
+        "Yes. Both products can be sold separately and work independently.",
+    },
+    {
+      question: "Are they a regulated purchase?",
+      answer:
+        "Neither product is a regulated financial service. Upon is a digital vault, Willow is software and death admin support. We can share our security whitepaper and a note on FCA-adjacent considerations on request.",
     },
     {
       question: "How long does onboarding take?",
       answer:
-        "Roughly two weeks from signed agreement to first client invite. We handle the setup; your team needs about 90 minutes total.",
+        "We can get you set up in minutes. We also offer a free trial, please contact us to arrange.",
     },
   ],
 } as const;
