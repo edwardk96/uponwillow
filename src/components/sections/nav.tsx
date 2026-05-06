@@ -134,7 +134,7 @@ export function Nav() {
         {/* CTA + hamburger — right */}
         <div className="flex items-center gap-2 justify-end">
           <ButtonLink
-            variant="secondary"
+            variant="primary"
             href={siteMeta.calcomUrl}
             target="_blank"
             rel="noopener noreferrer"

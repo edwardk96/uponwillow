@@ -12,7 +12,7 @@ export function Journey() {
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
         {journeyContent.headline}
       </h2>
-      <p className="text-3.5 text-secondary leading-[1.6] mb-8 max-w-3xl">
+      <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
         {journeyContent.subhead}
       </p>
 
@@ -27,10 +27,10 @@ export function Journey() {
               {card.title}
             </h3>
             <p className="text-xs text-tertiary mb-3.5">{card.timing}</p>
-            <p className="text-sm text-secondary leading-[1.65] mb-3.5">
+            <p className="text-sm text-secondary leading-[1.8] mb-3.5">
               {card.description}
             </p>
-            <ul className="text-sm leading-[1.7] list-disc pl-5 space-y-1">
+            <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
               {card.bullets.map((bullet) => (
                 <li key={bullet}>{bullet}</li>
               ))}

@@ -3,13 +3,12 @@ import { ButtonLink } from "@/components/ui/button";
 
 export function FinalCTA() {
   return (
-    <section className="text-center mx-6 py-14 bg-card border-copper border-1 border-border rounded-2xl">
+    <section className="text-center mx-6 mt-12 py-14 bg-card border-divider border-1 border-border rounded-2xl">
       <h2 className="font-serif text-3xl font-medium mb-3">
-        Fancy a 15-minute chat?
+        Want to learn more?
       </h2>
       <p className="text-3.5 text-secondary mb-6 max-w-3xl mx-auto">
-        We&apos;ll walk through the adviser journey, share the data behind the
-        model, and answer any remaining questions.
+        We can walk you through the adviser journey, share details behind the vault&apos;s encryption, explain how we notify companies and answer any remaining questions.
       </p>
       <div className="flex gap-2.5 justify-center flex-wrap">
         <ButtonLink

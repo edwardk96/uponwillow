@@ -20,7 +20,7 @@ export function FAQ() {
             }`}
           >
             <p className="text-3.5 font-medium mb-1.5">{item.question}</p>
-            <p className="text-sm text-secondary leading-[1.6]">
+            <p className="text-sm text-secondary leading-[1.8]">
               {item.answer}
             </p>
           </div>

@@ -12,7 +12,7 @@ export function Pricing() {
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
         {pricingContent.headline}
       </h2>
-      <p className="text-3.5 text-secondary leading-[1.6] mb-8 max-w-3xl">
+      <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
         {pricingContent.subhead}
       </p>
 
@@ -24,14 +24,14 @@ export function Pricing() {
           >
             <ProductTag product={card.product}>{card.tag}</ProductTag>
             <p className="text-3.5 font-medium mt-3.5 mb-1">{card.heading}</p>
-            <p className="font-serif text-8 font-medium leading-tight">
+            <p className="font-serif text-8 font-medium leading-[1.8]">
               {card.price}
               <span className="font-sans text-3.5 text-tertiary font-normal ml-1">
                 {card.unit}
               </span>
             </p>
             <p className="text-xs text-tertiary mb-3.5">{card.cadence}</p>
-            <p className="text-xs text-secondary leading-[1.55]">
+            <p className="text-xs text-secondary leading-[1.8]">
               {card.description}
             </p>
           </div>

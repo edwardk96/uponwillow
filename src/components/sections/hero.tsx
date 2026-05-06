@@ -9,11 +9,11 @@ export function Hero() {
     <section className="px-6 py-12 border-b-[0.5px] border-divider">
       <Eyebrow>{heroContent.eyebrow}</Eyebrow>
 
-      <h1 className="font-serif text-3xl font-medium leading-[1.2] mb-5 max-w-3xl">
+      <h1 className="font-serif text-3xl font-medium leading-[1.8] mb-5 max-w-3xl">
         {heroContent.headline}
       </h1>
 
-      <p className="text-sm text-secondary leading-[1.65] mb-6 max-w-3xl">
+      <p className="text-sm text-secondary leading-[1.8] mb-6 max-w-3xl">
         {heroContent.subhead}
       </p>
 
@@ -38,7 +38,7 @@ export function Hero() {
             <p className="font-serif text-xl font-medium mb-1.5">
               {stat.value}
             </p>
-            <p className="text-xs text-tertiary leading-[1.5]">{stat.label}</p>
+            <p className="text-xs text-tertiary leading-[1.8]">{stat.label}</p>
           </div>
         ))}
       </div>
