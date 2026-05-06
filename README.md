@@ -151,13 +151,9 @@ These live as CSS custom properties in `styles/tokens.css` and are used directly
 These are placeholders in the current copy that you'll want to correct:
 
 1. **AUM-at-death stat.** I've used "~70%" in the hero. Replace with whatever your earlier research turned up — ideally a UK-specific figure with a citeable source.
-2. **Surname for Ed.** I used "Hardy" as a placeholder.
-3. **Liam's hedge fund.** Named or unnamed? "Leading systematic hedge fund" works either way.
-4. **Funeral Partners' market position.** Verify "second-largest UK funeral group".
-5. **Funeral Partners board dates.** I guessed 2021–2025.
-6. **Cal.com booking URL.** Set up a 20-min event and pop the URL in `content/meta.ts`.
-7. **Contact email.** `hello@uponwillow.com`? `advisers@uponwillow.com`? Set up before launch.
-8. **One-pager PDF.** A two-page version of the site for advisers to email internally. Build after the page is live — the email capture flow is wired to send it once it exists.
+2. **Cal.com booking URL.** Set up a 20-min event and pop the URL in `content/meta.ts`.
+3. **Contact email.** `hello@uponwillow.com`? `advisers@uponwillow.com`? Set up before launch.
+4. **One-pager PDF.** A two-page version of the site for advisers to email internally. Build after the page is live — the email capture flow is wired to send it once it exists.
 
 ---
 
