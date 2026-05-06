@@ -156,7 +156,7 @@ These are placeholders in the current copy that you'll want to correct:
 4. **One-pager PDF.** A two-page version of the site for advisers to email internally. Build after the page is live — the email capture flow is wired to send it once it exists.
 5. **Posthog** - wire up and add cookies banner
 6. **Navbar** - needs to be refactored so the section tracking is smoother
-7. **Copy** - needs proper review 
+7. **FAQ** - needs proper review and put in accordian
 8. **One-pager** - change to get early access 
 
 
