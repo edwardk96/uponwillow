@@ -12,10 +12,10 @@ export const controlContent = {
     {
       title: "White-label option",
       body:
-        "Co-branded or fully white-labelled. Your logo, your tone of voice, your support for the family.",
+        "Co-branded or fully white-labelled. Your logo, your contact details, your support for the family.",
     },
     {
-      title: "No direct cross-sell",
+      title: "No cross-sell",
       body:
         "We will never market other financial services or third parties to your clients or their beneficiaries.",
     },

@@ -27,7 +27,7 @@ export const journeyContent = {
       bullets: [
         "Ensure relevance from day one, building trust with beneficiaries during a sensitive time",
         "You appear throughout as the key contact and trusted adviser",
-        "For firms already doing this informally, Willow can save you hours in admin",
+        "For firms already doing this informally, Willow can save you hours of filling in forms",
       ],
     },
   ],

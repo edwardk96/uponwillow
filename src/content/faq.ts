@@ -1,6 +1,6 @@
 export const faqContent = {
   eyebrow: "Common questions",
-  headline: "What advisers usually ask first.",
+  headline: "What advisers usually ask us.",
   items: [
     {
       question: "Why are these two separate companies?",
