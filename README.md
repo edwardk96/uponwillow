@@ -146,14 +146,18 @@ These live as CSS custom properties in `styles/tokens.css` and are used directly
 
 ---
 
-## What needs your input before building
+## To-do
 
 These are placeholders in the current copy that you'll want to correct:
 
 1. **AUM-at-death stat.** I've used "~70%" in the hero. Replace with whatever your earlier research turned up — ideally a UK-specific figure with a citeable source.
-2. **Cal.com booking URL.** Set up a 20-min event and pop the URL in `content/meta.ts`.
-3. **Contact email.** `hello@uponwillow.com`? `advisers@uponwillow.com`? Set up before launch.
+2. **Cal.com booking URL.** Set up a 15-min event and pop the URL in `content/meta.ts`.
+3. **Contact email.** `hello@uponwillow.com`? `advisers@uponwillow.com`? 
 4. **One-pager PDF.** A two-page version of the site for advisers to email internally. Build after the page is live — the email capture flow is wired to send it once it exists.
+5. **Posthog** - wire up and add cookies banner
+6. **Navbar** - needs to be refactored so the section tracking is smoother
+7. **Copy** - needs proper review 
+
 
 ---
 
