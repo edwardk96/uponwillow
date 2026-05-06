@@ -133,15 +133,6 @@ export function Nav() {
 
         {/* CTA + hamburger — right */}
         <div className="flex items-center gap-2 justify-end">
-          <ButtonLink
-            variant="primary"
-            href={siteMeta.calcomUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex !px-3.5 !py-1.5 !text-xs"
-          >
-            Book a 20-min call
-          </ButtonLink>
           <button
             type="button"
             className="md:hidden flex items-center justify-center w-9 h-9 rounded-md hover:bg-band transition-colors"
