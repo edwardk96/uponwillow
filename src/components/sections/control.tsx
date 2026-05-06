@@ -3,12 +3,15 @@ import { Eyebrow } from "@/components/ui/eyebrow";
 
 export function Control() {
   return (
-    <section id="control" className="px-6 py-12 border-b-[0.5px] border-divider">
+    <section
+      id="control"
+      className="px-6 py-12 border-b-[0.5px] border-divider"
+    >
       <Eyebrow>{controlContent.eyebrow}</Eyebrow>
-      <h2 className="font-serif text-[22px] font-medium tracking-[-0.005em] mb-2">
+      <h2 className="font-serif text-6 font-medium tracking-[-0.005em] mb-2">
         {controlContent.headline}
       </h2>
-      <p className="text-[14px] text-secondary leading-[1.6] mb-[30px] max-w-[540px]">
+      <p className="text-3.5 text-secondary leading-[1.6] mb-8 max-w-3xl">
         {controlContent.subhead}
       </p>
 
@@ -18,8 +21,8 @@ export function Control() {
             key={item.title}
             className="p-4 bg-card border-[0.5px] border-divider rounded-md"
           >
-            <h3 className="text-[13px] font-medium mb-[6px]">{item.title}</h3>
-            <p className="text-[12px] text-tertiary leading-[1.5]">{item.body}</p>
+            <h3 className="text-sm font-medium mb-1.5">{item.title}</h3>
+            <p className="text-xs text-tertiary leading-[1.5]">{item.body}</p>
           </div>
         ))}
       </div>

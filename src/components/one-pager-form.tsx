@@ -29,14 +29,16 @@ export function OnePagerForm({ triggerLabel }: Props) {
 
   if (state.status === "success") {
     return (
-      <p className="text-[13px] text-secondary">
+      <p className="text-sm text-secondary">
         Sent. Check your inbox in a moment.
       </p>
     );
   }
 
   const fieldErrors =
-    state.status === "error" ? state.fieldErrors : ({} as Record<string, string[]>);
+    state.status === "error"
+      ? state.fieldErrors
+      : ({} as Record<string, string[]>);
 
   return (
     <form
@@ -61,10 +63,10 @@ export function OnePagerForm({ triggerLabel }: Props) {
           name="email"
           placeholder="you@firm.co.uk"
           required
-          className="h-9 px-3 text-[13px] bg-card border-[0.5px] border-divider-strong rounded-md focus:outline-none focus:border-primary"
+          className="h-9 px-3 text-sm bg-card border-[0.5px] border-divider-strong rounded-md focus:outline-none focus:border-primary"
         />
         {fieldErrors.email?.[0] && (
-          <p className="text-[11px] text-tertiary mt-1">{fieldErrors.email[0]}</p>
+          <p className="text-xs text-tertiary mt-1">{fieldErrors.email[0]}</p>
         )}
       </div>
       <div className="flex flex-col">
@@ -73,10 +75,12 @@ export function OnePagerForm({ triggerLabel }: Props) {
           name="firmName"
           placeholder="Firm name"
           required
-          className="h-9 px-3 text-[13px] bg-card border-[0.5px] border-divider-strong rounded-md focus:outline-none focus:border-primary"
+          className="h-9 px-3 text-sm bg-card border-[0.5px] border-divider-strong rounded-md focus:outline-none focus:border-primary"
         />
         {fieldErrors.firmName?.[0] && (
-          <p className="text-[11px] text-tertiary mt-1">{fieldErrors.firmName[0]}</p>
+          <p className="text-xs text-tertiary mt-1">
+            {fieldErrors.firmName[0]}
+          </p>
         )}
       </div>
       <Button variant="primary" disabled={state.status === "submitting"}>

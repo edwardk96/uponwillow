@@ -11,7 +11,7 @@ const productClasses = {
 export function ProductTag({ product, children }: Props) {
   return (
     <span
-      className={`inline-block text-[11px] px-[10px] py-[3px] rounded-full font-medium ${productClasses[product]}`}
+      className={`inline-block text-xs px-2.5 py-1 rounded-full font-medium ${productClasses[product]}`}
     >
       {children}
     </span>

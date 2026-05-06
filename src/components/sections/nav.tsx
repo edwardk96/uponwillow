@@ -44,7 +44,7 @@ export function Nav() {
         // Trigger when section is roughly in the upper half of the viewport.
         rootMargin: "-30% 0px -60% 0px",
         threshold: [0, 0.25, 0.5, 0.75, 1],
-      }
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -85,13 +85,11 @@ export function Nav() {
             aria-label="Upon — opens in a new tab"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/upon-logo.png"
-              alt="Upon"
-              className="h-6 w-auto"
-            />
+            <img src="/upon-logo.png" alt="Upon" className="h-6 w-auto" />
           </a>
-          <span className="text-muted text-sm" aria-hidden="true">×</span>
+          <span className="text-muted text-sm" aria-hidden="true">
+            ×
+          </span>
           <a
             href={siteMeta.willowUrl}
             target="_blank"
@@ -100,16 +98,12 @@ export function Nav() {
             aria-label="Willow — opens in a new tab"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/willow-logo.svg"
-              alt="Willow"
-              className="h-4 w-auto"
-            />
+            <img src="/willow-logo.svg" alt="Willow" className="h-4 w-auto" />
           </a>
         </div>
 
         {/* Nav links — centre, desktop only */}
-        <ul className="hidden md:flex justify-center gap-7 text-[13px]">
+        <ul className="hidden md:flex justify-center gap-7 text-sm">
           {navLinks.map((link) => {
             const id = link.href.replace("#", "");
             const isActive = activeSection === id;
@@ -144,7 +138,7 @@ export function Nav() {
             href={siteMeta.calcomUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex !px-[14px] !py-[6px] !text-[12px]"
+            className="hidden sm:inline-flex !px-3.5 !py-1.5 !text-xs"
           >
             Book a 20-min call
           </ButtonLink>
@@ -175,7 +169,7 @@ export function Nav() {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className={`block px-6 py-3 text-[14px] transition-colors ${
+                    className={`block px-6 py-3 text-3.5 transition-colors ${
                       isActive
                         ? "text-primary font-medium bg-band"
                         : "text-tertiary font-normal hover:text-primary"
@@ -207,7 +201,17 @@ export function Nav() {
 
 function MenuIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <line x1="3" y1="6" x2="21" y2="6" />
       <line x1="3" y1="12" x2="21" y2="12" />
       <line x1="3" y1="18" x2="21" y2="18" />
@@ -217,7 +221,17 @@ function MenuIcon() {
 
 function CloseIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <line x1="18" y1="6" x2="6" y2="18" />
       <line x1="6" y1="6" x2="18" y2="18" />
     </svg>
