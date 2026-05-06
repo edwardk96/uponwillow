@@ -36,7 +36,7 @@ export function Hero() {
             key={stat.label}
             className="p-5 bg-card border-[0.5px] border-divider rounded-md"
           >
-            <p className="font-serif text-xl font-medium mb-1.5">
+            <p className="font-serif text-2xl md:text-3xl font-medium mb-1.5">
               {stat.value}
             </p>
             <p className="text-xs text-tertiary leading-[1.8]">{stat.label}</p>
