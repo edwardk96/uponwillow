@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Single source of truth for design tokens.
+ * Tailwind v4 turns these into utility classes (bg-surface, text-primary, etc.)
+ * and also exposes them as CSS custom properties for inline-style use.
+ */
+@theme {
+  /* Surfaces */
+  --color-surface: #FAFAF7;
+  --color-card: #FFFFFF;
+  --color-band: #F4F1E8;
+
+  /* Text */
+  --color-primary: #1A1A1A;
+  --color-secondary: #4A4842;
+  --color-tertiary: #6B6960;
+  --color-muted: #8A8880;
+
+  /* Borders */
+  --color-divider: #E5E2D8;
+  --color-divider-strong: #D9D5C7;
+
+  /* Brand tags — used only on the small product pills */
+  --color-vault-bg: #F0EFFB;
+  --color-vault-text: #4A3F8C;
+  --color-willow-bg: #EEF3E6;
+  --color-willow-text: #3D5C1F;
+
+  /* Typography */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/*
+ * Sticky nav is 56px tall. When users click a nav link and we smooth-scroll
+ * to a section, we want the section heading to sit clear of the nav, not
+ * underneath it. scroll-margin-top handles this for both nav clicks and
+ * direct anchor URLs (e.g. uponwillow.com/#pricing).
+ */
+section[id] {
+  scroll-margin-top: 64px;
 }
