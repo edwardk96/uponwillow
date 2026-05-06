@@ -9,7 +9,7 @@ export function Hero() {
     <section className="px-6 py-12 border-b-[0.5px] border-divider">
       <Eyebrow>{heroContent.eyebrow}</Eyebrow>
 
-      <h1 className="font-serif text-3xl font-medium leading-[1.8] mb-5 max-w-3xl">
+      <h1 className="font-serif text-3xl font-medium mb-5 max-w-3xl">
         {heroContent.headline}
       </h1>
 
@@ -17,12 +17,13 @@ export function Hero() {
         {heroContent.subhead}
       </p>
 
-      <div className="flex flex-wrap gap-2.5 items-center">
+      <div className="flex flex-col sm:flex-row gap-2.5 sm:items-center">
         <ButtonLink
           variant="primary"
           href={siteMeta.calcomUrl}
           target="_blank"
           rel="noopener noreferrer"
+          className="w-full sm:w-auto justify-center"
         >
           {heroContent.primaryCta.label}
         </ButtonLink>

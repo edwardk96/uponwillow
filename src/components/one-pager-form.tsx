@@ -21,7 +21,11 @@ export function OnePagerForm({ triggerLabel }: Props) {
 
   if (state.status === "idle") {
     return (
-      <Button variant="secondary" onClick={() => setState({ status: "open" })}>
+      <Button
+        variant="secondary"
+        onClick={() => setState({ status: "open" })}
+        className="w-full sm:w-auto"
+      >
         {triggerLabel}
       </Button>
     );
@@ -36,13 +40,11 @@ export function OnePagerForm({ triggerLabel }: Props) {
   }
 
   const fieldErrors =
-    state.status === "error"
-      ? state.fieldErrors
-      : ({} as Record<string, string[]>);
+    state.status === "error" ? state.fieldErrors : ({} as Record<string, string[]>);
 
   return (
     <form
-      className="flex flex-wrap items-start gap-2"
+      className="flex flex-col sm:flex-row sm:flex-wrap sm:items-start gap-2 w-full sm:w-auto"
       onSubmit={(e) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
@@ -57,7 +59,7 @@ export function OnePagerForm({ triggerLabel }: Props) {
         });
       }}
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-auto">
         <input
           type="email"
           name="email"
@@ -69,7 +71,7 @@ export function OnePagerForm({ triggerLabel }: Props) {
           <p className="text-xs text-tertiary mt-1">{fieldErrors.email[0]}</p>
         )}
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col w-full sm:w-auto">
         <input
           type="text"
           name="firmName"
@@ -78,12 +80,10 @@ export function OnePagerForm({ triggerLabel }: Props) {
           className="h-9 px-3 text-sm bg-card border-[0.5px] border-divider-strong rounded-md focus:outline-none focus:border-primary"
         />
         {fieldErrors.firmName?.[0] && (
-          <p className="text-xs text-tertiary mt-1">
-            {fieldErrors.firmName[0]}
-          </p>
+          <p className="text-xs text-tertiary mt-1">{fieldErrors.firmName[0]}</p>
         )}
       </div>
-      <Button variant="primary" disabled={state.status === "submitting"}>
+      <Button variant="primary" disabled={state.status === "submitting"} className="w-full sm:w-auto">
         {state.status === "submitting" ? "Sending…" : "Send it"}
       </Button>
     </form>

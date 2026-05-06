@@ -64,7 +64,7 @@ export async function requestOnePager(formData: FormData): Promise<ActionResult>
     subject: "Upon × Willow — adviser one-pager",
     text:
       "Thanks for your interest. Attached is the one-pager outlining our joint adviser proposition.\n\n" +
-      "If you'd like to discuss it, you can book a 20-minute call here: https://uponwillow.com\n\n" +
+      "If you'd like to discuss it, you can book a 15-minute call here: https://uponwillow.com\n\n" +
       "— The Upon × Willow team",
     // TODO: attach the actual PDF once produced. For now we send the text body.
   });
