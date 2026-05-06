@@ -9,7 +9,7 @@ export function Hero() {
     <section className="px-6 py-12 border-b-[0.5px] border-divider">
       <Eyebrow>{heroContent.eyebrow}</Eyebrow>
 
-      <h1 className="font-serif text-3xl font-medium leading-[1.2] tracking-[-0.01em] mb-5 max-w-3xl">
+      <h1 className="font-serif text-3xl font-medium leading-[1.2] mb-5 max-w-3xl">
         {heroContent.headline}
       </h1>
 

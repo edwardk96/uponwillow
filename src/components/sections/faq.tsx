@@ -5,7 +5,7 @@ export function FAQ() {
   return (
     <section id="faq" className="px-6 py-12 border-b-[0.5px] border-divider">
       <Eyebrow>{faqContent.eyebrow}</Eyebrow>
-      <h2 className="font-serif text-6 font-medium tracking-[-0.005em] mb-8">
+      <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-8">
         {faqContent.headline}
       </h2>
 

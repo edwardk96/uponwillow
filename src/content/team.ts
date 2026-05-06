@@ -12,8 +12,8 @@ export const teamContent = {
       bio:
         "Quantitative researcher at a leading systematic hedge fund before founding Upon. Computer science at Cambridge. Designed Upon's end-to-end encryption architecture and beneficiary key-sharing scheme.",
       credentials: [
-        "Quantitative research, systematic hedge fund",
-        "Computer science, University of Cambridge",
+        "Quant developer, Quadrature Hedge Fund",
+        "Computer Science, University of Cambridge",
         "Author, Upon security whitepaper",
       ],
     },
@@ -23,11 +23,11 @@ export const teamContent = {
       role: "Co-founder",
       accent: "willow" as const,
       bio:
-        "Spent four years on the board of Funeral Partners, the UK's second-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL",
+        "Spent four years on the board of Funeral Partners, the UK's third-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL",
       credentials: [
-        "Funeral Partners",
-        "Private equity, Montagu",
-        "Investment banking, M&A",
+        "Board, Funeral Partners",
+        "Private Equity, Montagu",
+        "Investment Banking, Morgan Stanley",
       ],
     },
   ],

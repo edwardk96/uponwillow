@@ -7,15 +7,16 @@
  */
 @theme {
   /* Surfaces */
-  --color-surface: #FAFAF7;
-  --color-card: #FFFFFF;
-  --color-band: #F4F1E8;
+  --color-surface: #fafaf7;
+  --color-card: #ffffff;
+  --color-band: #f4f1e8;
+  --color-copper: #d1b06f;
 
   /* Text */
-  --color-primary: #1A1A1A;
-  --color-secondary: #4A4842;
-  --color-tertiary: #6B6960;
-  --color-muted: #8A8880;
+  --color-primary: #1a1a1a;
+  --color-secondary: #4a4842;
+  --color-tertiary: #6b6960;
+  --color-muted: #8a8880;
 
   /* Borders */
   --color-divider: #E5E2D8;
@@ -23,16 +24,18 @@
 
   /* Brand tags — used only on the small product pills */
   --color-vault-bg: #F0EFFB;
-  --color-vault-text: #4A3F8C;
+  --color-vault-text: #4A3F8D;
   --color-willow-bg: #EEF3E6;
   --color-willow-text: #3D5C1F;
 
   /* Typography */
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-sans:
+    var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-html, body {
+html,
+body {
   background: var(--color-surface);
   color: var(--color-primary);
   -webkit-font-smoothing: antialiased;
