@@ -1,3 +1,5 @@
+import Image from "next/image";
+import heroImage from "@/assets/hero.jpg";
 import { heroContent } from "@/content/hero";
 import { siteMeta } from "@/content/meta";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -30,18 +32,30 @@ export function Hero() {
         <OnePagerForm triggerLabel={heroContent.secondaryCta.label} />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-9">
-        {heroContent.stats.map((stat) => (
-          <div
-            key={stat.label}
-            className="p-5 bg-card border-[0.5px] border-divider rounded-md"
-          >
-            <p className="font-serif text-2xl md:text-3xl font-medium mb-1.5">
-              {stat.value}
-            </p>
-            <p className="text-xs text-tertiary leading-[1.8]">{stat.label}</p>
-          </div>
-        ))}
+      <hr className="border-0 border-t-[0.5px] border-divider my-9" />
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+        <div className="flex flex-col gap-3.5">
+          {heroContent.stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="p-5 bg-card border-[0.5px] border-divider rounded-md"
+            >
+              <p className="font-serif text-2xl md:text-3xl font-medium mb-1.5">
+                {stat.value}
+              </p>
+              <p className="text-xs text-tertiary leading-[1.8]">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
+        <Image
+          src={heroImage}
+          alt=""
+          className="md:col-span-2 w-full h-auto md:h-full rounded-lg md:object-cover"
+          priority
+        />
       </div>
     </section>
   );

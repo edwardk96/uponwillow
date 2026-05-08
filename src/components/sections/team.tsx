@@ -1,10 +1,6 @@
+import Image from "next/image";
 import { teamContent } from "@/content/team";
 import { Eyebrow } from "@/components/ui/eyebrow";
-
-const accentClasses = {
-  vault: "bg-vault-bg text-vault-text",
-  willow: "bg-willow-bg text-willow-text",
-} as const;
 
 export function Team() {
   return (
@@ -24,11 +20,13 @@ export function Team() {
             className="p-6 bg-card border-[0.5px] border-divider rounded-lg"
           >
             <div className="flex items-center gap-3.5 mb-3.5">
-              <div
-                className={`w-11 h-11 rounded-full flex items-center justify-center text-sm font-medium ${accentClasses[member.accent]}`}
-              >
-                {member.initials}
-              </div>
+              <Image
+                src={member.image}
+                alt={member.name}
+                width={44}
+                height={44}
+                className="w-11 h-11 rounded-full object-cover"
+              />
               <div>
                 <p className="text-sm font-medium">{member.name}</p>
                 <p className="text-xs text-tertiary">{member.role}</p>
