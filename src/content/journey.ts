@@ -10,11 +10,11 @@ export const journeyContent = {
       title: "A secure record of everything that matters",
       timing: "Set up at onboarding or annual review",
       description:
-        "A end-to-end encrypted vault your client uses to hold everything their family will need: passwords, account lists, instructions, key documents. You can guide setup or leave it to them.",
+        "An end-to-end encrypted vault your client uses to hold everything their family will need: passwords, account lists, crypto holdings, instructions, key documents. You can guide setup or leave it to them.",
       bullets: [
-        "End-to-end, quantum secure encryption using AES-256 - we can never read your data",
-        "Beneficiaries share keys - the vault can't be opened until after death and needs a majority of keys",
-        "A digital safe that augments the Will and saves families hours hunting lost accounts",
+        "A digital safe that complements the will and saves families hours hunting lost accounts",
+        "End-to-end encrypted on your client's device, not even Upon can read what's inside",
+        "The vault key is split between beneficiaries, several must come together after death to open it",
       ],
     },
     {

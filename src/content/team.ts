@@ -10,11 +10,11 @@ export const teamContent = {
       role: "Co-founder",
       accent: "vault" as const,
       bio:
-        "Quantitative researcher at a leading systematic hedge fund before founding Upon. Designed Upon's end-to-end encryption architecture and Shamir secret key-sharing. Computer Science at Cambridge.",
+        "Quant developer at a leading systematic machine-learning hedge fund before founding Upon. Designed Upon's end-to-end encryption architecture. Studied Computer Science at Cambridge.",
       credentials: [
-        "Quant developer, Quadrature Hedge Fund",
+        "Quant Developer, Quadrature Capital",
         "Computer Science, University of Cambridge",
-        "Author, Upon security whitepaper",
+        "Software engineer for over 15 years",
       ],
     },
     {
@@ -23,7 +23,7 @@ export const teamContent = {
       role: "Co-founder",
       accent: "willow" as const,
       bio:
-        "Spent four years on the board of Funeral Partners, the UK's third-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL",
+        "Spent four years on the board of Funeral Partners, the UK's third-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL.",
       credentials: [
         "Board, Funeral Partners",
         "Private Equity, Montagu",
