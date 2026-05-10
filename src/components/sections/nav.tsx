@@ -1,23 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { navLinks, siteMeta } from "@/content/meta";
+import { navLinks } from "@/content/meta";
 import { ButtonLink } from "@/components/ui/button";
 
-/**
- * Top navigation. Client component for mobile menu state and scroll-spy.
- *
- * Scroll-spy picks the section whose top has crossed a trigger line just
- * below the sticky nav. At the very top of the page nothing has crossed,
- * so no link is highlighted — which is the correct behaviour over the
- * hero (which has no nav entry).
- *
- * Logos are plain <img> tags rather than next/image. The optimization
- * benefits of next/image (lazy loading, AVIF, responsive sizing) are
- * irrelevant for tiny above-the-fold SVGs, and next/image's default
- * SVG handling has historically been fiddly (dangerouslyAllowSVG etc.).
- * Boring solution wins (coding rule 1.8).
- */
 export function Nav() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -126,7 +112,7 @@ export function Nav() {
         <div className="flex items-center gap-2 justify-end">
           <ButtonLink
             variant="primary"
-            href={siteMeta.calcomUrl}
+            href={process.env.NEXT_PUBLIC_CALCOM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="!hidden md:!inline-flex !px-3 !py-1.5 text-xs"
@@ -175,7 +161,7 @@ export function Nav() {
             <li className="px-6 py-3">
               <ButtonLink
                 variant="primary"
-                href={siteMeta.calcomUrl}
+                href={process.env.NEXT_PUBLIC_CALCOM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"

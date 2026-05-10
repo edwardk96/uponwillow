@@ -23,9 +23,9 @@ export function Team() {
               <Image
                 src={member.image}
                 alt={member.name}
-                width={44}
-                height={44}
-                className="w-11 h-11 rounded-full object-cover"
+                width={100}
+                height={100}
+                className="w-14 h-14 rounded-full object-cover"
               />
               <div>
                 <p className="text-sm font-medium">{member.name}</p>

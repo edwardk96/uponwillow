@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import { siteMeta } from "@/content/meta";
-import { PostHogProvider } from "@/components/posthog-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,10 +41,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <body>
-        <PostHogProvider
-          apiKey={process.env.NEXT_PUBLIC_POSTHOG_KEY ?? ""}
-          apiHost={process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "/ingest"}
-        />
         {children}
       </body>
     </html>

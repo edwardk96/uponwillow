@@ -1,4 +1,3 @@
-import { siteMeta } from "@/content/meta";
 import { ButtonLink } from "@/components/ui/button";
 
 export function FinalCTA() {
@@ -8,12 +7,14 @@ export function FinalCTA() {
         Want to learn more?
       </h2>
       <p className="text-3.5 text-secondary mb-6 max-w-3xl mx-auto">
-        We can walk you through the adviser journey, share details behind Upon&apos;s encryption, explain how Willow notifies companies after death and answer any remaining questions.
+        We can walk you through the adviser journey, share details behind
+        Upon&apos;s encryption, explain how Willow notifies companies after
+        death and answer any remaining questions.
       </p>
       <div className="flex gap-2.5 justify-center flex-wrap">
         <ButtonLink
           variant="primary"
-          href={siteMeta.calcomUrl}
+          href={process.env.NEXT_PUBLIC_CALCOM_URL}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -21,7 +22,7 @@ export function FinalCTA() {
         </ButtonLink>
         <ButtonLink
           variant="secondary"
-          href={`mailto:${siteMeta.contactEmail}`}
+          href={`mailto:${process.env.CONTACT_EMAIL}`}
         >
           Email us
         </ButtonLink>

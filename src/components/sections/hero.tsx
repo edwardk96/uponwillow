@@ -1,10 +1,8 @@
 import Image from "next/image";
-import heroImage from "@/assets/hero.jpg";
+import heroImage from "@/assets/hero.png";
 import { heroContent } from "@/content/hero";
-import { siteMeta } from "@/content/meta";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ButtonLink } from "@/components/ui/button";
-import { OnePagerForm } from "@/components/one-pager-form";
 
 export function Hero() {
   return (
@@ -23,14 +21,22 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-2.5 sm:items-center">
           <ButtonLink
             variant="primary"
-            href={siteMeta.calcomUrl}
+            href={process.env.NEXT_PUBLIC_CALCOM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto justify-center"
           >
-            {heroContent.primaryCta.label}
+            Book a 15-min call
           </ButtonLink>
-          <OnePagerForm triggerLabel={heroContent.secondaryCta.label} />
+          <ButtonLink
+            variant="secondary"
+            href={`mailto:${process.env.CONTACT_EMAIL}`} //TODO
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto justify-center"
+          >
+            Request free trial
+          </ButtonLink>
         </div>
       </section>
 
