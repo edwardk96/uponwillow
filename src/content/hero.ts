@@ -11,11 +11,11 @@ export const heroContent = {
       label: "of inherited AUM leaves the original adviser within 12 months",
     },
     {
-      value: "~60",
+      value: "~60 tasks",
       label: "administrative tasks a family faces in the UK after a death",
     },
     {
-      value: "9–14m",
+      value: "9–14 months",
       label:
         "typical time to close an estate - and a window to earn the next generation's trust",
     },

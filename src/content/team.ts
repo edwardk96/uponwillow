@@ -1,3 +1,6 @@
+import eddiePhoto from "@/assets/team/eddie.jpg";
+import liamPhoto from "@/assets/team/liam.jpg";
+
 export const teamContent = {
   eyebrow: "Meet the founders",
   headline: "Built by people who know the sector.",
@@ -5,25 +8,23 @@ export const teamContent = {
     "Institutional finance and UK death-care industry experience, combined with the knowhow of building several production-grade platforms.",
   members: [
     {
-      initials: "LG",
       name: "Liam Gray",
-      role: "Co-founder",
-      accent: "vault" as const,
+      role: "Founder, Upon",
+      image: liamPhoto,
       bio:
-        "Quantitative researcher at a leading systematic hedge fund before founding Upon. Designed Upon's end-to-end encryption architecture and Shamir secret key-sharing. Computer Science at Cambridge.",
+        "Quant developer at a leading systematic machine-learning hedge fund before founding Upon. Designed Upon's end-to-end encryption architecture. Studied Computer Science at Cambridge.",
       credentials: [
-        "Quant developer, Quadrature Hedge Fund",
+        "Quant Developer, Quadrature Capital",
         "Computer Science, University of Cambridge",
-        "Author, Upon security whitepaper",
+        "Software engineer for over 15 years",
       ],
     },
     {
-      initials: "EK",
       name: "Edward Kerr",
-      role: "Co-founder",
-      accent: "willow" as const,
+      role: "Founder, Willow",
+      image: eddiePhoto,
       bio:
-        "Spent four years on the board of Funeral Partners, the UK's third-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL",
+        "Spent four years on the board of Funeral Partners, the UK's third-largest funeral group, while at the private equity fund Montagu. Earlier career in investment banking. Studied Economics at UCL.",
       credentials: [
         "Board, Funeral Partners",
         "Private Equity, Montagu",

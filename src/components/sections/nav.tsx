@@ -5,12 +5,12 @@ import { navLinks, siteMeta } from "@/content/meta";
 import { ButtonLink } from "@/components/ui/button";
 
 /**
- * Top navigation. Client component because:
- *   - Mobile menu open/close state
- *   - Scroll-spy via IntersectionObserver to highlight the active section
+ * Top navigation. Client component for mobile menu state and scroll-spy.
  *
- * The scroll-spy uses IntersectionObserver rather than a scroll listener
- * (cheaper, batched by the browser).
+ * Scroll-spy picks the section whose top has crossed a trigger line just
+ * below the sticky nav. At the very top of the page nothing has crossed,
+ * so no link is highlighted — which is the correct behaviour over the
+ * hero (which has no nav entry).
  *
  * Logos are plain <img> tags rather than next/image. The optimization
  * benefits of next/image (lazy loading, AVIF, responsive sizing) are
@@ -25,30 +25,32 @@ export function Nav() {
 
   useEffect(() => {
     const sectionIds = navLinks.map((link) => link.href.replace("#", ""));
-    const sections = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => el !== null);
+    if (sectionIds.length === 0) return;
 
-    if (sections.length === 0) return;
+    // Trigger line sits just below the 56px sticky nav.
+    const triggerLine = 80;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        if (visible[0]) {
-          setActiveSection(visible[0].target.id);
+    const compute = () => {
+      let active = "";
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= triggerLine) {
+          active = id;
+        } else {
+          break;
         }
-      },
-      {
-        // Trigger when section is roughly in the upper half of the viewport.
-        rootMargin: "-30% 0px -60% 0px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      },
-    );
+      }
+      setActiveSection(active);
+    };
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+    compute();
+    window.addEventListener("scroll", compute, { passive: true });
+    window.addEventListener("resize", compute);
+    return () => {
+      window.removeEventListener("scroll", compute);
+      window.removeEventListener("resize", compute);
+    };
   }, []);
 
   useEffect(() => {

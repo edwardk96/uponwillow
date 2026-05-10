@@ -5,7 +5,7 @@ export const faqContent = {
     {
       question: "Why are these two separate companies?",
       answer:
-        "Different products, different buyers, that excel together. Keeping them separate allows us to offer focused and modular products.",
+        "Different products and buyers, but one streamlined partnership. Keeping them separate allows us to offer focused and modular products.",
     },
     {
       question: "Can I use just one?",
