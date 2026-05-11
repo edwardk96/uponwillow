@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ButtonLink } from "@/components/ui/button";
-import willowImage from "@/assets/willow_adviser_hub_safari.png";
-import uponImage from "@/assets/upon_family_vault_safari.png";
+import willowImage from "@/assets/willow_screenshot.png";
+import uponImage from "@/assets/upon_screenshot.png";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
@@ -14,7 +14,7 @@ const stats = [
   },
   {
     value: "~60 tasks",
-    label: "administrative tasks a family faces in the UK after a death",
+    label: "a family typically faces in the UK after losing a loved one",
   },
   {
     value: "9–14 months",
@@ -62,7 +62,7 @@ export function Hero() {
         <Eyebrow>For financial advisers, planners and wealth managers</Eyebrow>
 
         <h1 className="font-serif text-3xl font-medium mb-5 max-w-3xl">
-          Keep the relationship when your client dies.
+          Support the family and keep the relationship when your client dies.
         </h1>
 
         <p className="text-sm text-secondary leading-[1.8] mb-6 max-w-3xl">
@@ -85,7 +85,9 @@ export function Hero() {
           </ButtonLink>
           <ButtonLink
             variant="secondary"
-            href={`mailto:${process.env.CONTACT_EMAIL}`} //TODO
+            href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}?subject=${encodeURIComponent(
+              "Free trial request for Upon and Willow",
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto justify-center"

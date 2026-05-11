@@ -7,9 +7,9 @@ export function FinalCTA() {
         Want to learn more?
       </h2>
       <p className="text-3.5 text-secondary mb-6 max-w-3xl mx-auto">
-        We can walk you through the adviser journey, share details behind
+        We can walk you through both products, share details behind
         Upon&apos;s encryption, explain how Willow notifies companies after
-        death and answer any remaining questions.
+        death and answer any other questions.
       </p>
       <div className="flex gap-2.5 justify-center flex-wrap">
         <ButtonLink
@@ -22,7 +22,7 @@ export function FinalCTA() {
         </ButtonLink>
         <ButtonLink
           variant="secondary"
-          href={`mailto:${process.env.CONTACT_EMAIL}`}
+          href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}
         >
           Email us
         </ButtonLink>

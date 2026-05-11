@@ -18,10 +18,10 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMeta.url),
-  title: `${siteMeta.name} — for financial advisers`,
+  title: `${siteMeta.name} - for financial advisers`,
   description: siteMeta.description,
   openGraph: {
-    title: `${siteMeta.name} — for financial advisers`,
+    title: `${siteMeta.name} - for financial advisers`,
     description: siteMeta.description,
     url: siteMeta.url,
     siteName: siteMeta.name,
