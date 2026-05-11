@@ -10,27 +10,29 @@ import { useEffect, useRef, useState } from "react";
 const stats = [
   {
     value: "~70%",
-    label: "of inherited AUM leaves the original adviser within 12 months",
+    label:
+      "of inherited assets leave the original adviser within a year, most often to the next generation",
   },
   {
-    value: "~60 tasks",
-    label: "a family typically faces in the UK after losing a loved one",
+    value: "100+",
+    label:
+      "online accounts the average adult now holds: a digital estate most wills never touch",
   },
   {
     value: "9–14 months",
     label:
-      "typical time to close an estate - and a window to earn the next generation's trust",
+      "to settle an estate, and the window in which the next generation decides who their adviser is",
   },
 ] as const;
 
 const screenshots = [
   {
     src: uponImage,
-    alt: "Upon Family Vault — encrypted vault for clients and beneficiaries",
+    alt: "Upon Family Vault: encrypted vault for clients and beneficiaries",
   },
   {
     src: willowImage,
-    alt: "Willow Adviser Hub — notify organisations after a client's death",
+    alt: "Willow Adviser Hub: notify organisations after a client's death",
   },
 ] as const;
 
@@ -62,15 +64,16 @@ export function Hero() {
         <Eyebrow>For financial advisers, planners and wealth managers</Eyebrow>
 
         <h1 className="font-serif text-3xl font-medium mb-5 max-w-3xl">
-          Support your clients through multiple generations.
+          Plan an inheritance that lasts generations.
         </h1>
 
         <p className="text-sm text-secondary leading-[1.8] mb-6 max-w-3xl">
-          Up to 70% of inherited assets leave the original adviser within a year
-          of a client&apos;s death. Upon and Willow solve this: a secure vault
-          your client builds with you while they&apos;re alive, and a
-          bereavement admin platform that supports their family - and keeps you
-          in the room - during a sensitive time.
+          Modern wealth is more than a portfolio. It&apos;s pensions and
+          property, but also crypto, online accounts, subscriptions, wishes
+          and the small details a family will need to find. Help your clients
+          pass on all of it, and stand alongside their family when the time
+          comes. Be the firm that&apos;s still trusted a generation later, not
+          the one quietly replaced.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-2.5 sm:items-center">
@@ -120,12 +123,12 @@ export function Hero() {
         <div className="hidden md:block mt-10 relative aspect-[16/7]">
           <Image
             src={uponImage}
-            alt="Upon Family Vault — encrypted vault for clients and beneficiaries"
+            alt="Upon Family Vault: encrypted vault for clients and beneficiaries"
             className="absolute top-0 left-0 w-[58%] h-auto rounded-md ring-1 ring-black/5"
           />
           <Image
             src={willowImage}
-            alt="Willow Adviser Hub — notify organisations after a client's death"
+            alt="Willow Adviser Hub: notify organisations after a client's death"
             className="absolute bottom-0 right-0 w-[58%] h-auto rounded-md ring-1 ring-black/10"
             priority
           />

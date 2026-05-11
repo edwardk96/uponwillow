@@ -4,7 +4,7 @@ export const siteMeta = {
   domain: "uponwillow.com",
   url: "https://uponwillow.com",
   description:
-    "A secure vault for clients during life, and a bereavement admin platform for their family after. Built to keep advisers in the room throughout.",
+    "Help your clients plan an inheritance that covers everything: assets, accounts, digital life and wishes. Then be there for their family when it matters. A relationship that lasts across generations.",
 } as const;
 
 export const navLinks = [
