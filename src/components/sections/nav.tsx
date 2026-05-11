@@ -49,11 +49,14 @@ export function Nav() {
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
     const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-      setActiveSection(id);
-    }
+
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        setActiveSection(id);
+      }
+    }, 50); // 50ms is usually a safe buffer for mobile devices
   };
 
   return (
