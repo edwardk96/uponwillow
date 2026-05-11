@@ -12,8 +12,9 @@ export function Pricing() {
         Retention-driven ROI.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        Both products billed to your firm. Opportunity to absorb the fees
-        inside your existing charges, or pass it through transparently.
+        Both products are billed to your firm. Absorb the cost inside your existing
+        charges, include it within a premium tier, or pass it through
+        transparently.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -52,8 +53,8 @@ export function Pricing() {
             Billed to your firm when activated
           </p>
           <p className="text-xs text-secondary leading-[1.8]">
-            A retention tool, not a client charge. Retaining inherited AuM
-            pays for the cost multiple times over.
+            Covered by the firm, not the family. Supporting the next generation
+            at this time builds enduring trust.
           </p>
         </div>
       </div>

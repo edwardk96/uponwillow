@@ -4,12 +4,12 @@ const items = [
   {
     question: "Are these two separate products?",
     answer:
-      "Upon and Willow are presently two independent products, which allows us to keep our offering modular. With clients' permission, our partnership allows us to seamlessly transfer data during a death.",
+      "Upon and Willow are two independent companies that work hand in hand. With your client's permission, what they recorded in life flows seamlessly to the family at the moment it's needed.",
   },
   {
     question: "Can I use just one?",
     answer:
-      "Yes. Both products can be bought separately and work independently.",
+      "Yes. Each works on its own, but they're designed to feel continuous for your client and their family.",
   },
   {
     question: "Are they a regulated purchase?",

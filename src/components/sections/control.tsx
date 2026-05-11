@@ -8,27 +8,30 @@ export function Control() {
     >
       <Eyebrow>You stay in control</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Your client. Your support.
+        Your client. Your relationship.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        We don&apos;t market to your clients, and we don&apos;t approach the family
+        This is an extension of your service, not a third party stepping in. We
+        don&apos;t market to your clients, and we never approach the family
         without you. Every touchpoint runs through you.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div className="p-4 bg-card border-[0.5px] border-divider rounded-md">
-          <h3 className="text-sm font-medium mb-1.5">You initiate everything</h3>
+          <h3 className="text-sm font-medium mb-1.5">
+            You initiate everything
+          </h3>
           <p className="text-xs text-tertiary leading-[1.8]">
-            Willow only activates when you confirm the death, any invites are
-            sent under your firm&apos;s name.
+            Support for the family only begins when you say so, and every invite
+            goes out under your firm&apos;s name.
           </p>
         </div>
 
         <div className="p-4 bg-card border-[0.5px] border-divider rounded-md">
           <h3 className="text-sm font-medium mb-1.5">White-label option</h3>
           <p className="text-xs text-tertiary leading-[1.8]">
-            Co-branded or fully white-labelled. Your logo, your contact
-            details, your support for the family.
+            Co-branded or fully white-labelled. Your logo, your contact details,
+            your support for the family.
           </p>
         </div>
 

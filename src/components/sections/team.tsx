@@ -40,7 +40,7 @@ export function Team() {
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
         Institutional finance and UK death-care experience, combined
-        with the knowhow of building several production-grade platforms.
+        with the know-how of building several production-grade platforms.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
