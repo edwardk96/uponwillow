@@ -9,7 +9,7 @@ export function Pricing() {
     >
       <Eyebrow>Pricing</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Retention driven ROI.
+        Retention-driven ROI.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
         Both products billed to your firm. Opportunity to absorb the fees
