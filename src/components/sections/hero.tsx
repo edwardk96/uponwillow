@@ -10,11 +10,11 @@ import { useEffect, useRef, useState } from "react";
 const stats = [
   {
     value: "~70%",
-    label: "of inherited AUM leaves the original adviser within 12 months",
+    label: "of inherited assets leaves the original adviser within a year",
   },
   {
     value: "~60 tasks",
-    label: "a family typically faces in the UK after losing a loved one",
+    label: "a UK family usually face after losing a loved one",
   },
   {
     value: "9–14 months",
@@ -26,11 +26,11 @@ const stats = [
 const screenshots = [
   {
     src: uponImage,
-    alt: "Upon Family Vault — encrypted vault for clients and beneficiaries",
+    alt: "Upon Family Vault: encrypted vault for clients and beneficiaries",
   },
   {
     src: willowImage,
-    alt: "Willow Adviser Hub — notify organisations after a client's death",
+    alt: "Willow Adviser Hub: notify organisations after a client's death",
   },
 ] as const;
 
@@ -120,12 +120,12 @@ export function Hero() {
         <div className="hidden md:block mt-10 relative aspect-[16/7]">
           <Image
             src={uponImage}
-            alt="Upon Family Vault — encrypted vault for clients and beneficiaries"
+            alt="Upon Family Vault: encrypted vault for clients and beneficiaries"
             className="absolute top-0 left-0 w-[58%] h-auto rounded-md ring-1 ring-black/5"
           />
           <Image
             src={willowImage}
-            alt="Willow Adviser Hub — notify organisations after a client's death"
+            alt="Willow Adviser Hub: notify organisations after a client's death"
             className="absolute bottom-0 right-0 w-[58%] h-auto rounded-md ring-1 ring-black/10"
             priority
           />

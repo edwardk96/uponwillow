@@ -12,24 +12,25 @@ export function Journey() {
         Ease the admin burden, before and after death.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        Clients securely save their accounts, passwords and other details
-        today. When they die, their beneficiaries gain access, and can
-        automatically notify and start closing accounts.{" "}
+        Clients securely save their accounts, passwords and other details today.
+        When they die, their beneficiaries gain access, and can automatically
+        notify and start closing accounts.{" "}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
         <div className="p-6 bg-card border-[0.5px] border-divider rounded-lg">
           <ProductTag product="vault">During life · Upon Vault</ProductTag>
           <h3 className="text-base font-medium mt-3.5 mb-1.5">
-            A secure record of everything that matters
+            Planning while life is good
           </h3>
           <p className="text-xs text-tertiary mb-3.5">
-            Set up at onboarding or annual review
+            Introduced at onboarding or annual review
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
-            An encrypted vault your client uses to hold everything their family
-            will need: passwords, account lists, crypto holdings, instructions,
-            key documents. You can guide setup or leave it to them.
+            A private place for your clients to gather the full picture of their
+            estate. Pensions, property, crypto, online accounts, passwords,
+            instructions and the small things they&apos;d hate their family to
+            miss. A deliberate act of care, framed by you.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
@@ -56,21 +57,23 @@ export function Journey() {
             Activated by you when notified of the death
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
-            Data can be ported directly into Willow, giving the family a
-            personalised checklist of every account closure required. Willow can
-            handle the calls and forms, and provide guidance on next steps.
+            When a client dies, the family turn to you. The estate can be mapped
+            in Willow, so you can give the family a personalised checklist of
+            what to do next. In the background, Willow handles the calls and
+            forms to start closing accounts.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
-              Ensure relevance from day one, building trust with beneficiaries
-              during a sensitive time
+              Meet beneficiaries in a moment that matters, as the trusted firm
+              their loved one chose
             </li>
             <li>
-              You appear throughout as the key contact and trusted adviser
+              You lead the relationship. Willow is the quiet engine handling
+              calls, forms and follow-ups
             </li>
             <li>
               For firms already doing this informally, Willow can save you hours
-              of form filling
+              of paperwork
             </li>
           </ul>
         </div>
