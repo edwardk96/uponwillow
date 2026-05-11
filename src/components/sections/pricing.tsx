@@ -1,4 +1,3 @@
-import { pricingContent } from "@/content/pricing";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ProductTag } from "@/components/ui/product-tag";
 
@@ -8,34 +7,55 @@ export function Pricing() {
       id="pricing"
       className="px-6 py-12 border-b-[0.5px] border-divider"
     >
-      <Eyebrow>{pricingContent.eyebrow}</Eyebrow>
+      <Eyebrow>Pricing</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        {pricingContent.headline}
+        Retention driven ROI.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        {pricingContent.subhead}
+        Both products billed to your firm. Opportunity to absorb the fees
+        inside your existing charges, or pass it through transparently.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-        {pricingContent.cards.map((card) => (
-          <div
-            key={card.tag}
-            className="p-6 bg-card border-[0.5px] border-divider rounded-lg"
-          >
-            <ProductTag product={card.product}>{card.tag}</ProductTag>
-            <p className="text-3.5 font-medium mt-3.5 mb-1">{card.heading}</p>
-            <p className="font-serif text-8 font-medium leading-[1.8]">
-              {card.price}
-              <span className="font-sans text-3.5 text-tertiary font-normal ml-1">
-                {card.unit}
-              </span>
-            </p>
-            <p className="text-xs text-tertiary mb-3.5">{card.cadence}</p>
-            <p className="text-xs text-secondary leading-[1.8]">
-              {card.description}
-            </p>
-          </div>
-        ))}
+        <div className="p-6 bg-card border-[0.5px] border-divider rounded-lg">
+          <ProductTag product="vault">Upon Vault</ProductTag>
+          <p className="text-3.5 font-medium mt-3.5 mb-1">
+            Per client, while alive
+          </p>
+          <p className="font-serif text-8 font-medium leading-[1.8]">
+            £5.99
+            <span className="font-sans text-3.5 text-tertiary font-normal ml-1">
+              / month
+            </span>
+          </p>
+          <p className="text-xs text-tertiary mb-3.5">
+            Billed monthly to your firm
+          </p>
+          <p className="text-xs text-secondary leading-[1.8]">
+            Pass through to clients, absorb into your fees, or include within a
+            premium tier. Volume discounts available.
+          </p>
+        </div>
+
+        <div className="p-6 bg-card border-[0.5px] border-divider rounded-lg">
+          <ProductTag product="willow">Willow</ProductTag>
+          <p className="text-3.5 font-medium mt-3.5 mb-1">
+            Per estate, at the time of death
+          </p>
+          <p className="font-serif text-8 font-medium leading-[1.8]">
+            £599
+            <span className="font-sans text-3.5 text-tertiary font-normal ml-1">
+              one-off
+            </span>
+          </p>
+          <p className="text-xs text-tertiary mb-3.5">
+            Billed to your firm when activated
+          </p>
+          <p className="text-xs text-secondary leading-[1.8]">
+            A retention tool, not a client charge. Retaining inherited AuM
+            pays for the cost multiple times over.
+          </p>
+        </div>
       </div>
     </section>
   );
