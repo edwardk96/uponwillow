@@ -8,7 +8,7 @@ export function Control() {
     >
       <Eyebrow>You stay in control</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Your client. Your brand. Your support.
+        Your client. Your support.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
         We don&apos;t market to your clients, and we don&apos;t approach the family

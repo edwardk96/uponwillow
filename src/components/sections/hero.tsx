@@ -62,7 +62,7 @@ export function Hero() {
         <Eyebrow>For financial advisers, planners and wealth managers</Eyebrow>
 
         <h1 className="font-serif text-3xl font-medium mb-5 max-w-3xl">
-          Support the family and keep the relationship when your client dies.
+          Support your clients through multiple generations.
         </h1>
 
         <p className="text-sm text-secondary leading-[1.8] mb-6 max-w-3xl">
