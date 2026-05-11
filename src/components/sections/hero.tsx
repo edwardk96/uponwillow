@@ -14,7 +14,7 @@ const stats = [
   },
   {
     value: "~60 tasks",
-    label: "administrative tasks a family faces in the UK after a death",
+    label: "a family typically faces in the UK after losing a loved one",
   },
   {
     value: "9–14 months",
@@ -85,7 +85,9 @@ export function Hero() {
           </ButtonLink>
           <ButtonLink
             variant="secondary"
-            href={`mailto:${process.env.CONTACT_EMAIL}`} //TODO
+            href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL}?subject=${encodeURIComponent(
+              "Free trial request for Upon and Willow",
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto justify-center"
