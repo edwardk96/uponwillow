@@ -9,11 +9,12 @@ export function Journey() {
     >
       <Eyebrow>The client journey</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Two products, for before and after death.
+        Ease the admin burden, before and after death.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        You introduce both products. Your client uses one. Their family uses the
-        other. You stay at the centre of both.
+        Clients securely save their accounts, passwords and other details
+        today. When they die, their beneficiaries gain access, and can
+        automatically notify and start closing accounts.{" "}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -26,10 +27,9 @@ export function Journey() {
             Set up at onboarding or annual review
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
-            An end-to-end encrypted vault your client uses to hold everything
-            their family will need: passwords, account lists, crypto holdings,
-            instructions, key documents. You can guide setup or leave it to
-            them.
+            An encrypted vault your client uses to hold everything their family
+            will need: passwords, account lists, crypto holdings, instructions,
+            key documents. You can guide setup or leave it to them.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
@@ -37,8 +37,8 @@ export function Journey() {
               hunting lost accounts
             </li>
             <li>
-              End-to-end encrypted on your client&apos;s device, not even Upon can
-              read what&apos;s inside
+              End-to-end encrypted on your client&apos;s device, not even Upon
+              can read what&apos;s inside
             </li>
             <li>
               The vault key is split between beneficiaries, several must come
@@ -57,8 +57,8 @@ export function Journey() {
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
             Data can be ported directly into Willow, giving the family a
-            personalised checklist of every account closure required. Willow
-            can handle the calls and forms, and provide guidance on next steps.
+            personalised checklist of every account closure required. Willow can
+            handle the calls and forms, and provide guidance on next steps.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
@@ -69,8 +69,8 @@ export function Journey() {
               You appear throughout as the key contact and trusted adviser
             </li>
             <li>
-              For firms already doing this informally, Willow can save you
-              hours of form filling
+              For firms already doing this informally, Willow can save you hours
+              of form filling
             </li>
           </ul>
         </div>
