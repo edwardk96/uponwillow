@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { ButtonLink } from "@/components/ui/button";
-import willowImage from "@/assets/willow_adviser_hub_safari.png";
-import uponImage from "@/assets/upon_family_vault_safari.png";
+import willowImage from "@/assets/willow_screenshot.png";
+import uponImage from "@/assets/upon_screenshot.png";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
