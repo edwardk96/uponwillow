@@ -9,40 +9,43 @@ export function Journey() {
     >
       <Eyebrow>The client journey</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Ease the admin burden, before and after death.
+        One plan, for a lifetime and beyond.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        Clients securely save their accounts, passwords and other details
-        today. When they die, their beneficiaries gain access, and can
-        automatically notify and start closing accounts.{" "}
+        Turn the conversation about inheritance into something tangible. Help
+        your client capture everything their family will need, then walk that
+        same family through what comes next. The relationship doesn&apos;t end
+        with the client. It continues with their children.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
         <div className="p-6 bg-card border-[0.5px] border-divider rounded-lg">
           <ProductTag product="vault">During life · Upon Vault</ProductTag>
           <h3 className="text-base font-medium mt-3.5 mb-1.5">
-            A secure record of everything that matters
+            Planning while life is good
           </h3>
           <p className="text-xs text-tertiary mb-3.5">
-            Set up at onboarding or annual review
+            Introduced at onboarding or annual review
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
-            An encrypted vault your client uses to hold everything their family
-            will need: passwords, account lists, crypto holdings, instructions,
-            key documents. You can guide setup or leave it to them.
+            A private place for your client to gather the full picture of
+            their estate, alongside the will rather than in place of it.
+            Pensions, property, crypto, online accounts, passwords,
+            instructions and the small things they&apos;d hate their family
+            to miss. A deliberate act of care, framed by you.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
-              A digital safe that complements the will and saves families hours
-              hunting lost accounts
+              A secure, digital vault that helps clients leave intent. Their family
+              inherits a plan, not a puzzle.
             </li>
             <li>
-              End-to-end encrypted on your client&apos;s device, not even Upon
-              can read what&apos;s inside
+              End-to-end encrypted on your client&apos;s device. Not even Upon
+              can see what&apos;s inside.
             </li>
             <li>
-              The vault key is split between beneficiaries, several must come
-              together after death to open it
+              Your client chooses what to keep just for the family and what
+              to share with you.
             </li>
           </ul>
         </div>
@@ -50,27 +53,30 @@ export function Journey() {
         <div className="p-6 bg-card border-[0.5px] border-divider rounded-lg">
           <ProductTag product="willow">After death · Willow</ProductTag>
           <h3 className="text-base font-medium mt-3.5 mb-1.5">
-            A clear path through &apos;death admin&apos;
+            By the family&apos;s side, on the hardest day
           </h3>
           <p className="text-xs text-tertiary mb-3.5">
-            Activated by you when notified of the death
+            Activated by you when the family needs support
           </p>
           <p className="text-sm text-secondary leading-[1.8] mb-3.5">
-            Data can be ported directly into Willow, giving the family a
-            personalised checklist of every account closure required. Willow can
-            handle the calls and forms, and provide guidance on next steps.
+            When loss happens, the family already has somewhere to turn: you,
+            with Willow alongside. The estate your client mapped out flows
+            straight in, and the practical work of closing accounts, notifying
+            providers and settling affairs is handled with care, on their
+            behalf.
           </p>
           <ul className="text-sm leading-[1.8] list-disc pl-5 space-y-1">
             <li>
-              Ensure relevance from day one, building trust with beneficiaries
-              during a sensitive time
+              Meet the next generation in a moment that matters, as the trusted
+              firm their parent chose.
             </li>
             <li>
-              You appear throughout as the key contact and trusted adviser
+              You stay the relationship. Willow is the quiet engine handling
+              the calls, forms and follow-ups.
             </li>
             <li>
-              For firms already doing this informally, Willow can save you hours
-              of form filling
+              A natural bridge into ongoing advice for the people now inheriting
+              the wealth you stewarded.
             </li>
           </ul>
         </div>

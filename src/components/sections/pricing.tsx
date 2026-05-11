@@ -9,11 +9,12 @@ export function Pricing() {
     >
       <Eyebrow>Pricing</Eyebrow>
       <h2 className="font-serif text-2xl font-medium tracking-[-0.005em] mb-2">
-        Retention-driven ROI.
+        A small addition to your service. A meaningful one to a family.
       </h2>
       <p className="text-3.5 text-secondary leading-[1.8] mb-8 max-w-3xl">
-        Both products billed to your firm. Opportunity to absorb the fees
-        inside your existing charges, or pass it through transparently.
+        Both products billed to your firm. Absorb the cost inside your existing
+        charges, include it within a premium tier, or pass it through
+        transparently, whichever fits the way you serve.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -52,8 +53,8 @@ export function Pricing() {
             Billed to your firm when activated
           </p>
           <p className="text-xs text-secondary leading-[1.8]">
-            A retention tool, not a client charge. Retaining inherited AuM
-            pays for the cost multiple times over.
+            Carried by the firm, not the family. Standing alongside the next
+            generation in this moment is what carries the relationship forward.
           </p>
         </div>
       </div>
